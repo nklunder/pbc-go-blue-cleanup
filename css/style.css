@@ -1,16 +1,12 @@
-body {
-  color: #212121;
-}
+body { color: #212121; }
 
-#navigation-primary {
-  display: none !important; /* extra safeguard - still showing sometimes */
-}
+/* extra safeguard - still showing sometimes */
+#navigation-primary { display: none !important; }
 
 ul {
   list-style-type: disc;
-  margin-bottom: 14px !important; /* needed to break default styling */
+  margin-bottom: 14px !important; /* needed to break default BS styling */
 }
-
 
 
 .banner {
@@ -21,6 +17,7 @@ ul {
     font-size: 48px;
     font-weight: bold;
     line-height: 1.125;
+    margin-top: 16px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, .2);
   }
   .banner h2 {
@@ -31,13 +28,23 @@ ul {
   margin-top: 14px;
 }
 
-
-
+#subsidy-tool {
+  margin-top: 30px;
+}
+/* Media query exists in the main stylesheet, would just need to add rules */
 @media screen and (max-width:767px) {
   #content-area { padding: 0; }
 
   ul { padding-left: 20px; }
 
-  .banner h1 { font-size: 38px; }
-  .banner h2 { font-size: 24px; }
+  .banner h1 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .banner h2 { font-size: 21px; }
+  .banner h2  a { text-decoration: underline; }
+}
+
+@media (max-width:480px) {
+
 }
