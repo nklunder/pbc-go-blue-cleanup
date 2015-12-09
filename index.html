@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Go Blue Cleanup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main-pbc.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #logo {
+      background-image: url("http://www.premeraux.com/img/logo_pbc.png") !important;
+    }
+  </style>
+</head>
+
+<body class="visitor">
+  <div id="main-container">
+    <header id="header">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="/" id="logo" title="Go to home"></a>
+          <a href="/" id="nationalAccount"></a>
+        </div>
+      </div>
+      <nav id="navigation-primary" class="navbar navbar-default" role="navigation" style="display: none;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-primary-collapse" id="menu">
+          <ul class="nav navbar-nav"></ul>
+        </div>
+      </nav>
+    </header>
+    <div id="content-area">
+      <div class="row">
+        <div role="main" class="col-md-12">
+          <div id="content-main">
+
+            <div class="banner">
+              <div class="row">
+                <div class="col-sm-6 col-lg-4 text-center">
+                  <div id="fader">
+                    <img src="img/08-WAYH4_SkaterBoys_board.jpg" alt="for my risk takers written on stakeboard" class="img-responsive text-center" style="display: inline-block;">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-8">
+                  <h1 class="text-center">Who are you healthy for?</h1>
+                  <h2 class="text-center">Get covered by Washington's #1 plan</h2>
+                  <div class="text-center">
+                    <a class="btn btn-default btn-lg remove-target" role="button" href="http://shop.premera.com/wa/shop/">Explore plans</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-lg-8">
+                  <h2 class="text-center">Or call <a href="tel:877-773-6372">877-PREMERA (877-773-6372)</a></h2>
+                </div>
+              </div>
+              <small class="pull-right no-padding">Source: <a href="#">Kaiser Family Foundation</a></small>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-sm-6">
+                <h2>Quality care to meet your needs</h2>
+                <p>Stay healthy for those you care about most with a plan from one of the most recognized names in healthcare, Premera Blue Cross. Premera has a variety of plans that include the products, services and support when and where you need us,
+                  like:
+                </p>
+                <ul>
+                  <li>Hospital stays, checkups, and prescription coverage</li>
+                  <li>No-cost flu shots and most vaccinations</li>
+                  <li>Two no-cost visits to your primary care doctor</li>
+                  <li>Free and confidential access to our 24-Hour NurseLine</li>
+                  <li>Virtual consultations with a board-certified physician</li>
+                  <li>Coverage while traveling with access to care nationwide through the BlueCard program</li>
+                </ul>
+                <p>Already have a Premera health plan? <a href="/portals/planchange/" target="_blank">Log in to renew or change your current plan</a>.</p>
+              </div>
+              <div class="col-sm-6">
+                <h2>Can you save money on your health plan?</h2>
+                <p>Millions do. Eligible Washington residents saved an average of $200 a month on subsidized premiums in 2015
+                  <span class="small">(source: <a href="#">Washington Health Benefit Exchange</a>)</span>.</p>
+                <div class="panel panel-default" id="subsidy-tool">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Find out if you might qualify for a subsidy and how much help you could get.</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                      <li class="input-li" id="input-ageRange" style="display: none;">Your age:</li>
+                      <li class="input-li" id="input-employerPlan" style="display: none;">Employer health plan:</li>
+                      <li class="input-li" id="input-householdSize" style="display: none;">Your household:</li>
+                      <li class="input-li" id="input-incomeRange" style="display: none;">Household income:</li>
+                    </ul>
+                    <div class="question-div" id="questionDiv">
+                      <div class="question-div" id="ageRange" style="display: block;">
+                        <h4>What is your age?</h4>
+                        <button type="button" class="btn btn-default btn-lg">18 to 64</button>
+                        <button type="button" class="btn btn-default btn-lg">65 or over</button>  </div>
+                      <div class="question-div" id="employerPlan" style="display: none;">
+                        <h4>Does your employer offer a health plan?</h4>
+                        <button type="button" class="btn btn-default btn-lg">Yes</button>
+                        <button type="button" class="btn btn-default btn-lg">No</button>  </div>
+                      <div class="question-div" id="householdSize" style="display: none;">
+                        <h4>How many people are in your household?</h4>
+                        <button type="button" class="btn btn-default btn-lg">1 person</button>
+                        <button type="button" class="btn btn-default btn-lg">2 people</button>
+                        <button type="button" class="btn btn-default btn-lg">3 people</button>
+                        <button type="button" class="btn btn-default btn-lg">4 people</button>
+                        <button type="button" class="btn btn-default btn-lg">5 or more</button>  </div>
+                      <div class="question-div" id="incomeRange" style="display: none;">
+                        <h4>What's your annual household income?</h4>
+                        <button type="button" class="btn btn-default btn-lg" value="1">$47,080 or less</button>
+                        <button type="button" class="btn btn-default btn-lg" value="2">$63,721 - $80,360</button>
+                        <button type="button" class="btn btn-default btn-lg" value="3">$47,081 - $63,720</button>
+                        <button type="button" class="btn btn-default btn-lg" value="4">$80,361 - $97,000</button>
+                        <button type="button" class="btn btn-default btn-lg" value="5">$97,001 or more</button>  </div>
+                    </div>
+                    <div id="loadingAnim" style="display: none;">
+                      <img alt="" src="/images/shared/spinner3-black.gif">
+                    </div>
+                    <div class="answer-div" id="answerDiv" style="display: none;">
+                      <div class="answer-div" id="answer-yes" style="display: block;">
+                        <div class="alert alert-success" role="alert">
+                          <span class="glyphicon glyphicon-ok-sign"></span><b>You and your family possibly qualify for savings through a subsidy!</b></div>
+                        <p>Based on your information, you might be able to have your monthly costs reduced by <b>$238 or more</b>. Premera can help you sign up for a health plan, and apply for a tax credit to subsidize your monthly cost.
+                        </p>
+                        <p>
+                          <span class="glyphicon glyphicon-earphone"></span> Call us at <b>877-PREMERA (877-773-6372)</b>.</p>
+                        <p>You can also <a href="http://shop.premera.com/wa/shop/">explore our plans without subsidy help</a>, or <a href="#" class="start-over">check again</a> to see if you might qualify for a subsidy.</p>
+                      </div>
+                      <div class="answer-div" id="answer-five" style="display: none;">
+                        <p>Depending on your annual household income, you may be eligible for a subsidy. Premera can help you sign up for a health plan and help you apply for a tax credit to subsidize your monthly cost.</p>
+                        <p>
+                          <span class="glyphicon glyphicon-earphone"></span> Call us at <b>877-PREMERA (877-773-6372)</b>.</p>
+                        <p>You can also <a href="http://shop.premera.com/wa/shop/">explore our plans without subsidy help</a>, or <a href="#" class="start-over">check again</a> to see if you might qualify for a subsidy.</p>
+                      </div>
+                      <div class="answer-div" id="answer-no" style="display: none;">
+                        <div class="alert alert-danger" role="alert">
+                          <span class="glyphicon glyphicon-exclamation-sign"></span><b>Based on your information, most likely you will not qualify for a subsidy.</b></div>
+                        <p>You can still find the best health coverage for you and your family by <a href="http://shop.premera.com/wa/shop/">exploring our plans and getting a quote</a>, or you can <a href="#" class="start-over">check again</a> to see if
+                          you might qualify for a subsidy.</p>
+                      </div>
+                      <div class="answer-div" id="answer-plan" style="display: none;">
+                        <div class="alert alert-danger" role="alert">
+                          <span class="glyphicon glyphicon-exclamation-sign"></span><b>It's most likely that you're not eligible for a subsidy, unless your job-based coverage is considered unaffordable or inadequate under the law.</b></div>
+                        <p>Consult with your company benefits manager to learn more. You can also <a href="http://shop.premera.com/wa/shop/">continue exploring plans</a>, or <a href="#" class="start-over">check again</a> to find out if you might qualify
+                          for a subsidy.</p>
+                      </div>
+                      <div class="answer-div" id="answer-medicare" style="display: none;">
+                        <div class="alert alert-danger" role="alert">
+                          <p>
+                            <span class="glyphicon glyphicon-exclamation-sign"></span><b>It looks like you are not eligible for a subsidy, but you may qualify for Medicare coverage</b>.</p>
+                        </div>
+                        <p><a title="Explore Medicare Plans" href="/medicare-advantage/">Explore a variety of Medicare plans</a> that can meet your health care needs and budget, or <a href="#" class="start-over">check again</a> to find out if you might qualify
+                          for a subsidy.</p>
+                        <p class="clear"><a type="button" class="btn btn-primary" href="/medicare-advantage/">Explore Medicare plans</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="banner">
+              <div class="row">
+                <div class="col-sm-6 col-lg-8">
+                  <h2>Have questions? We can help you:</h2>
+                  <ul>
+                    <li>Find the best health plan to meet your needs</li>
+                    <li>Determine whether you can save money on your monthly premium</li>
+                    <li>Enroll you through washingtonhealthplanfinder.org</li>
+                    <li>Call 1-877-PREMERA (<a href="tel:877-773-6372">877-773-6372</a>)
+                      <br>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                  <div class="text-center">
+                    <img class="img-responsive text-right" src="img/01-Benefits_BabyBelly.jpg" alt="pregnant woman with toddler"> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="navigation-home">
+      <div class="row">
+        <div class="col-md-offset-6 col-md-6 col-xs-12">
+          <div class="pull-right">
+            <div>
+              <a title="Facebook" href="//www.facebook.com/premerabluecross">
+                <span class="icon-large icon-facebook2"></span>
+              </a>
+              <a title="Twitter" href="//twitter.com/premera">
+                <span class="icon-large icon-twitter"></span>
+              </a>
+              <a title="YouTube" href="//www.youtube.com/user/premerabluecross">
+                <span class="icon-large icon-youtube"></span>
+              </a>
+              <a title="PremeraNews" href="/wa/visitor/healthsource/">
+                <span class="icon-large icon-bubbles"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="row">
+        <nav id="navigation-footer-primary" class="small col-md-12">
+          <div>
+            <ul class="unstyled">
+              <li><a href="/wa/visitor/about-premera/">About Premera</a></li>
+              <li class="visitor"><a href="/wa/visitor/careers/">Careers</a></li>
+              <li><a href="/wa/provider/reference/medical-policies/">Medical Policies</a></li>
+              <li class="visitor"><a href="/wa/visitor/find-a-doctor/24-hour-nurseline/">24-Hour NurseLine</a></li>
+              <li class="member"><a href="/portals/member/external/nurseline/">24-Hour NurseLine</a></li>
+              <li class="visitor"><a href="/wa/visitor/contact-us/">Contact Us</a></li>
+              <li class="member"><a href="/Portals/Member/External/ContactUs/">Contact Us</a></li>
+              <li><a href="/wa/visitor/privacy-policy/">Notice of Privacy Practices </a></li>
+              <li class="visitor"><a href="/wa/visitor/privacy-policy-espanol/"> Aviso de Practicas de Privacidad</a></li>
+              <li class="visitor"><a href="/documents/030553.pdf">Code of Conduct</a></li>
+              <li><a href="/wa/visitor/terms-and-conditions/">Terms &amp; Conditions</a></li>
+              <li><a href="/wa/visitor/fraud-and-abuse/">Fraud &amp; Abuse</a></li>
+              <li class="visitor"><a href="/wa/visitor/web-help/">Web Help</a></li>
+              <li class="visitor"><a href="/wa/visitor/legal-notices/">Legal Notice on Neurodevelopmental Therapies</a></li>
+              <li class="visitor"><a href="https://connect.premera.com">PremeraConnect</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p></p>
+          <div>
+
+          </div>
+          <p></p>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <span id="ekDate">© 2015&nbsp;</span>Premera Blue Cross is an Independent Licensee of the Blue Cross Blue Shield Association serving businesses and residents of Alaska and Washington state, excluding Clark County.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
