@@ -4,8 +4,8 @@ body {
   /*background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);*/
 }
 h2, h4 { color: #666; }
-a, a:hover { color: #007fa4; }
-a:visited { color: #004b6c; }
+a { color: #009bda; }
+a:hover, a:visited { color: #006bb7; }
 
 /* extra safeguard - still showing sometimes */
 #navigation-primary { display: none !important; }
@@ -27,6 +27,7 @@ a:visited { color: #004b6c; }
   }
 .banner .btn-lg {
   margin-top: 14px;
+  background-color: #b5c327;
 }
 
 .services-list { margin-bottom: 16px; }
@@ -53,6 +54,4 @@ a:visited { color: #004b6c; }
   .banner h2  a { text-decoration: underline; }
 }
 
-@media (max-width:480px) {
-
-}
+/* optional */
