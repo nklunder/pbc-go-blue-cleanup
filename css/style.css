@@ -1,0 +1,44 @@
+body { color: #212121; }
+
+h2, h4 { color: #666; }
+
+#navigation-primary { display: none !important; } /* extra safeguard - still showing sometimes */
+
+
+.banner-lifewise {
+  background-image: radial-gradient(circle at 66% 70%, #00a370, transparent 100%);
+  background-color: #008a5e; }
+.banner-premera {
+  background-image: radial-gradient(circle at 66% 70%, #009bda, transparent 100%);
+  background-color: #006bb7; }
+  .banner h1 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.125;
+    margin-top: 16px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .2); }
+  .banner h2 {
+    font-size: 28px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2); }
+
+.list-services { margin-bottom: 16px; }
+.list-services span {
+  display: block;
+  color: #0082A7;
+  font-size: 24px;
+  padding: 12px; }
+
+#subsidy-tool { margin-top: 28px; }
+
+
+/* Media query exists in the main stylesheet, would just need to add rules */
+@media screen and (max-width:767px) {
+  #content-area { padding: 0 0 12px; }
+
+  ul { padding-left: 20px; }
+
+  .banner h1 {
+    font-size: 26px;
+    margin-top: 0; }
+  .banner h2 { font-size: 20px; }
+}
